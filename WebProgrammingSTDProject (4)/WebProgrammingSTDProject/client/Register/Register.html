@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+
+<body>
+    <div class="register-container">
+        <form id="registerForm" class="register-form" autocomplete="off">
+            <h2>Register</h2>
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder="Username">
+                <span class="error-message" id="usernameError"></span>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Password">
+                <span class="error-message" id="passwordError"></span>
+            </div>
+            <div class="input-group">
+                <button type="submit">Register</button>
+            </div>
+            <p class="success-message" id="successMessage"></p>
+        </form>
+        <section>
+            <article>
+                <aside>you already have account? <a href="../Login/Login.html">Login</a> </aside>
+            </article>
+        </section>
+
+    </div>
+    <script src="Register.js"></script>
+</body>
+
+</html>

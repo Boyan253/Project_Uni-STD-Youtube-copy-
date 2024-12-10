@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Video</title>
+    <link rel="stylesheet" href="PostVideo.css">
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="post-video-container">
+        <h2>Post a Video</h2>
+        <form id="videoForm" autocomplete="off">
+            <div class="input-group">
+                <input type="text" id="videoUrl" placeholder="Video URL" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="videoTitle" placeholder="Video Title" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="videoAuthor" placeholder="Author Name" required>
+            </div>
+            <div class="input-group">
+                <button type="submit">Post Video</button>
+            </div>
+        </form>
+        <div id="videoList" class="video-list"></div>
+    </div>
+    <footer class="site-footer">Copyright rights by BoyanCorporationSAP</footer>
+    <script src="PostVideo.js"></script>
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+</body>
+</html>

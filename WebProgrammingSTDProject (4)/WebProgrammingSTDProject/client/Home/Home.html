@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="./Home.css" />
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/videojs-youtube/dist/Youtube.min.js"></script>
+<script src="Home.js"></script>
+    <title>YouTube Clone with HTML & CSS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo left">
+            <i id="menu" class="material-icons">menu</i>
+            <img src="https://www.freecodecamp.org/news/content/images/2022/01/yt-logo.png" alt="YouTube Logo" />
+        </div>
+
+        <div class="search center">
+            <form action="">
+                <input type="text" placeholder="Search" />
+                <button><i class="material-icons">search</i></button>
+            </form>
+            <i class="material-icons mic">mic</i>
+        </div>
+
+        <div class="icons right">
+            <h1 id="toDissapear">Welcome, <span id="usernameDisplay"></span>!</h1>
+
+            <div class="icon-container">
+                <a href="../PostVideo/PostVideo.html" class="icon-link">
+                    <i class="material-icons">videocam</i>
+                </a>
+                <a href="your-apps-link.html" class="icon-link">
+                    <i class="material-icons">apps</i>
+                </a>
+                <a href="your-notifications-link.html" class="icon-link">
+                    <i class="material-icons">notifications</i>
+                </a>
+                <a href="../Register/Register.html" class="icon-link">
+                    <i class="material-icons display-this">account_circle</i>
+                </a>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="side-bar">
+            
+            <div class="nav">
+                <a class="nav-link active">
+                    <i class="material-icons">home</i>
+                    <span>Home</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">local_fire_department</i>
+                    <span>Trending</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">subscriptions</i>
+                    <span>Subscriptions</span>
+                </a>
+            </div>
+            <hr>
+            <div class="nav">
+                <a class="nav-link">
+                    <i class="material-icons">library_add_check</i>
+                    <span>Library</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">history</i>
+                    <span>History</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">play_arrow</i>
+                    <span>Your Videos</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">watch_later</i>
+                    <span>Watch Later</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">thumb_up</i>
+                    <span>Liked Videos</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="videos">
+                <!-- Video Example -->
+                <div class="video">
+                    <div class="thumbnail">
+                        <video
+                            id="my-video"
+                            class="video-js vjs-default-skin"
+                            controls
+                            preload="auto"
+                            width="100%"
+                            height="auto"
+                            data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube", "src": "https://www.youtube.com/watch?v=zUwB_imVjmg"}]}'
+                        ></video>
+                    </div>
+                    <div class="details">
+                        <div class="author">
+                            <img
+                                src="https://yt3.ggpht.com/bpzY-S4DYlbTeOpY5hIA7qz_hcbMkgvLAugtwKBGTTImNnWAGudX0y53bo_fJZ0auypxrWkUiw=s88-c-k-c0x00ffffff-no-rj"
+                                alt="Author"
+                            />
+                        </div>
+                        <div class="title">
+                            <h3>Introverts & Content Creation | Sumudu Siriwardana</h3>
+                            <a href="#">Francesco Ciulla</a>
+                            <span>2M Views • 3 Months Ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                  <div class="thumbnail">
+                      <video
+                          id="my-video"
+                          class="video-js vjs-default-skin"
+                          controls
+                          preload="auto"
+                          width="100%"
+                          height="auto"
+                          data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube", "src": "https://www.youtube.com/watch?v=zUwB_imVjmg"}]}'
+                      ></video>
+                  </div>
+                  <div class="details">
+                      <div class="author">
+                          <img
+                              src="https://yt3.ggpht.com/bpzY-S4DYlbTeOpY5hIA7qz_hcbMkgvLAugtwKBGTTImNnWAGudX0y53bo_fJZ0auypxrWkUiw=s88-c-k-c0x00ffffff-no-rj"
+                              alt="Author"
+                          />
+                      </div>
+                      <div class="title">
+                          <h3>Introverts & Content Creation | Sumudu Siriwardana</h3>
+                          <a href="#">Francesco Ciulla</a>
+                          <span>2M Views • 3 Months Ago</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="video">
+                <div class="thumbnail">
+                    <video
+                        id="my-video"
+                        class="video-js vjs-default-skin"
+                        controls
+                        preload="auto"
+                        width="100%"
+                        height="auto"
+                        data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube", "src": "https://www.youtube.com/watch?v=zUwB_imVjmg"}]}'
+                    ></video>
+                </div>
+                <div class="details">
+                    <div class="author">
+                        <img
+                            src="https://yt3.ggpht.com/bpzY-S4DYlbTeOpY5hIA7qz_hcbMkgvLAugtwKBGTTImNnWAGudX0y53bo_fJZ0auypxrWkUiw=s88-c-k-c0x00ffffff-no-rj"
+                            alt="Author"
+                        />
+                    </div>
+                    <div class="title">
+                        <h3>Introverts & Content Creation | Sumudu Siriwardana</h3>
+                        <a href="#">Francesco Ciulla</a>
+                        <span>2M Views • 3 Months Ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+              <div class="thumbnail">
+                  <video
+                      id="my-video"
+                      class="video-js vjs-default-skin"
+                      controls
+                      preload="auto"
+                      width="100%"
+                      height="auto"
+                      data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube", "src": "https://www.youtube.com/watch?v=zUwB_imVjmg"}]}'
+                  ></video>
+              </div>
+              <div class="details">
+                  <div class="author">
+                      <img
+                          src="https://yt3.ggpht.com/bpzY-S4DYlbTeOpY5hIA7qz_hcbMkgvLAugtwKBGTTImNnWAGudX0y53bo_fJZ0auypxrWkUiw=s88-c-k-c0x00ffffff-no-rj"
+                          alt="Author"
+                      />
+                  </div>
+                  <div class="title">
+                      <h3>Introverts & Content Creation | Sumudu Siriwardana</h3>
+                      <a href="#">Francesco Ciulla</a>
+                      <span>2M Views • 3 Months Ago</span>
+                  </div>
+              </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+                <video
+                    id="my-video"
+                    class="video-js vjs-default-skin"
+                    controls
+                    preload="auto"
+                    width="100%"
+                    height="auto"
+                    data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube", "src": "https://www.youtube.com/watch?v=zUwB_imVjmg"}]}'
+                ></video>
+            </div>
+            <div class="details">
+                <div class="author">
+                    <img
+                        src="https://yt3.ggpht.com/bpzY-S4DYlbTeOpY5hIA7qz_hcbMkgvLAugtwKBGTTImNnWAGudX0y53bo_fJZ0auypxrWkUiw=s88-c-k-c0x00ffffff-no-rj"
+                        alt="Author"
+                    />
+                </div>
+                <div class="title">
+                    <h3>Introverts & Content Creation | Sumudu Siriwardana</h3>
+                    <a href="#">Francesco Ciulla</a>
+                    <span>2M Views • 3 Months Ago</span>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+              <video
+                  id="my-video"
+                  class="video-js vjs-default-skin"
+                  controls
+                  preload="auto"
+                  width="auto"
+                  height="auto"
+                  data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube", "src": "https://www.youtube.com/watch?v=zUwB_imVjmg"}]}'
+              ></video>
+          </div>
+          <div class="details">
+              <div class="author">
+                  <img
+                      src="https://yt3.ggpht.com/bpzY-S4DYlbTeOpY5hIA7qz_hcbMkgvLAugtwKBGTTImNnWAGudX0y53bo_fJZ0auypxrWkUiw=s88-c-k-c0x00ffffff-no-rj"
+                      alt="Author"
+                  />
+              </div>
+              <div class="title">
+                  <h3>Introverts & Content Creation | Sumudu Siriwardana</h3>
+                  <a href="#">Francesco Ciulla</a>
+                  <span>2M Views • 3 Months Ago</span>
+              </div>
+          </div>
+      </div>
+               
+            </div>
+        </div>
+    </main>
+</body>
+</html>
