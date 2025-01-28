@@ -40,7 +40,7 @@ To get started with this project, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/youtube-clone.git
+   git clone https://github.com/boyan253/Project_Uni-STD-Youtube-copy
 Navigate to the project folder:
 
 bash
